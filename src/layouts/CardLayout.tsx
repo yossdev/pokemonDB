@@ -7,10 +7,11 @@ type Props = {
 
 function CardLayout({ children, id }: Props) {
   return (
-    <div className="mx-3">
-      <div id={id} className="flex flex-wrap">
-        {children}
-      </div>
+    <div
+      id={id}
+      className="grid gap-3 justify-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+    >
+      {children}
     </div>
   );
 }

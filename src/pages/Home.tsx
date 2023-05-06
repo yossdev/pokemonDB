@@ -43,7 +43,7 @@ function Home() {
 
       {isLoading ? (
         <div className="h-[15rem] flex justify-center items-center">
-          <img src={spinner} alt="Loading..." />
+          <img loading="lazy" src={spinner} alt="Loading..." />
         </div>
       ) : (
         <>

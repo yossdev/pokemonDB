@@ -4,7 +4,7 @@ import ScrollToTop from "../components/ScrollToTop";
 
 function MainLayout() {
   return (
-    <main className="container mx-auto px-2.5 min-h-screen">
+    <main className="container mx-auto px-2.5 min-h-screen overflow-hidden">
       <Nav />
       <Outlet />
       <ScrollToTop />

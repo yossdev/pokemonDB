@@ -45,6 +45,7 @@ function Card({
           </>
         ) : null}
         <img
+          loading="lazy"
           src={data.sprites.other["official-artwork"].front_default}
           height={112}
           className={`${isLoading && "animate-pulse"} min-h-[7rem] mx-auto`}

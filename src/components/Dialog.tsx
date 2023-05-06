@@ -21,7 +21,7 @@ const Dialog = forwardRef<HTMLDialogElement, Props>(function Dialog(
 
   const setScroll = () => {
     if (document.body.style.overflow === "hidden") {
-      document.body.style.overflow = "scroll";
+      document.body.style.removeProperty("overflow");
     }
   };
 
@@ -38,6 +38,7 @@ const Dialog = forwardRef<HTMLDialogElement, Props>(function Dialog(
       };
       ctx?.savePokemon(pokemon);
     }
+    (ref as MutableRefObject<HTMLDialogElement>)?.current?.close();
     setScroll();
     setAlias("");
   };
