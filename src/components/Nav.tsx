@@ -15,6 +15,8 @@ function Nav() {
   ];
 
   const location = useLocation();
+  const pathname = location.pathname;
+  const path = pathname.at(-1) === "/" ? pathname.slice(0, -1) : pathname;
 
   return (
     <header className="flex justify-between items-center pt-5 pb-2.5">
@@ -25,7 +27,7 @@ function Nav() {
             <Link key={v.path} to={v.path}>
               <li
                 className={`rounded-md py-1 px-3 border ${
-                  v.path === location.pathname
+                  v.path === path
                     ? "bg-sky-600 text-white border-sky-600"
                     : undefined
                 }`}
