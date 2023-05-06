@@ -14,4 +14,4 @@
 
 [x] Delete saved pokemon from Context
 
-[ ] Deploy ke github pages
+[x] Deploy ke github pages
