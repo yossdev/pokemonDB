@@ -1,14 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
+import { VITE_BASE } from "../const";
 import ThemeSwitch from "./ThemeSwitch";
 
 function Nav() {
   const nav = [
     {
-      path: "/",
+      path: `${VITE_BASE}`,
       text: "Home",
     },
     {
-      path: "/collections",
+      path: `${VITE_BASE}/collections`,
       text: "Collections",
     },
   ];

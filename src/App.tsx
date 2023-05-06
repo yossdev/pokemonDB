@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { VITE_BASE } from "./const";
 import { SavedPokemonContext } from "./context/savedPokemonContext";
 import MainLayout from "./layouts/MainLayout";
 import NotFound from "./pages/404";
@@ -29,8 +30,11 @@ function App() {
       <Router>
         <Routes>
           <Route element={<MainLayout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/collections" element={<Collections />} />
+            <Route path={`${VITE_BASE}/`} element={<Home />} />
+            <Route
+              path={`${VITE_BASE}/collections`}
+              element={<Collections />}
+            />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
