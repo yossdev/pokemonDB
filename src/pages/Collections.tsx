@@ -34,8 +34,10 @@ function Collections() {
         if (data === undefined || data.length < 1)
           return <p className="py-3 text-center">No Pokemon Saved</p>;
 
-        const filtered = data.filter((d: SavedPokemon) =>
-          d.name.includes(searchedAndFiltered.name)
+        const filtered = data.filter(
+          (d: SavedPokemon) =>
+            d.name.includes(searchedAndFiltered.name) ||
+            d.alias.includes(searchedAndFiltered.name)
         );
 
         return (
