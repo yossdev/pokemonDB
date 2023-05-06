@@ -16,7 +16,7 @@ function SearchAndFilter({ setSearchedAndFiltered }: Props) {
   const { data: types, isLoading } = getPokemonTypes();
 
   useEffect(() => {
-    setSearchedAndFiltered({ name: query, type: selectedType });
+    setSearchedAndFiltered({ name: query.toLowerCase(), type: selectedType });
   }, [query, selectedType, setSearchedAndFiltered]);
 
   return (
