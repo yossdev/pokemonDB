@@ -5,7 +5,7 @@ import ThemeSwitch from "./ThemeSwitch";
 function Nav() {
   const nav = [
     {
-      path: `${VITE_BASE}`,
+      path: VITE_BASE,
       text: "Home",
     },
     {

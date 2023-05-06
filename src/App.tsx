@@ -30,7 +30,7 @@ function App() {
       <Router>
         <Routes>
           <Route element={<MainLayout />}>
-            <Route path={`${VITE_BASE}/`} element={<Home />} />
+            <Route path={VITE_BASE} element={<Home />} />
             <Route
               path={`${VITE_BASE}/collections`}
               element={<Collections />}
