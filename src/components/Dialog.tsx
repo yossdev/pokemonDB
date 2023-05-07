@@ -53,7 +53,7 @@ const Dialog = forwardRef<HTMLDialogElement, Props>(function Dialog(
   return (
     <dialog
       ref={ref}
-      className="duration-100 dark:backdrop:bg-gray-600/25 min-w-[15rem] max-w-[30rem] w-[70vh] bg-white rounded-md dark:bg-dark dark:text-white"
+      className="duration-100 dark:backdrop:bg-gray-600/25 w-[30rem] bg-white rounded-md dark:bg-dark dark:text-white"
     >
       <form method="dialog" className="mx-1 mb-2.5">
         <h5 className="leading-9">
