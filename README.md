@@ -1,17 +1,17 @@
 # Objective
 
-[x] Halaman 300 data Pokemon
+- [x] Halaman 300 data Pokemon
 
-[x] Filter by type
+- [x] Filter by type
 
-[x] Search by name
+- [x] Search by name
 
-[x] Button save to Context
+- [x] Button save to Context
 
-[x] Dialog untuk set Alias
+- [x] Dialog untuk set Alias
 
-[x] Halaman saved pokemon (collections)
+- [x] Halaman saved pokemon (collections)
 
-[x] Delete saved pokemon from Context
+- [x] Delete saved pokemon from Context
 
-[x] Deploy ke github pages
+- [x] Deploy ke github pages
